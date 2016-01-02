@@ -1,0 +1,14 @@
+- name: Update apt cache.
+  apt: update_cache=yes cache_valid_time=86400
+
+- name: Install Shellinabox.
+  apt: name=shellinabox state=installed
+
+- name: Copy shellinabox default file.
+  template:
+    src: shellinabox.j2
+    dest: /etc/default/shellinabox
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart shellinabox

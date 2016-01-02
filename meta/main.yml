@@ -1,0 +1,19 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: virtualenv
+  description: Shellinabox support for virtualenv
+  company: ""
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.4
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+    - development
+    - web
